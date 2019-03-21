@@ -292,8 +292,73 @@
         <p><strong>hexo+git</strong></p>
 <hr>
 <h1 id="下载两个工具"><a href="#下载两个工具" class="headerlink" title="下载两个工具"></a>下载两个工具</h1><h2 id="ndoe-js"><a href="#ndoe-js" class="headerlink" title="ndoe.js"></a>ndoe.js</h2><p>下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a><br>下载完成后验证是否安装成功以一下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure></p>
-<p><img src="img1.png" alt="效果图"></p>
-<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>下载<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a></p>
+<p><img src="/image/img1.jpg" alt="效果图"></p>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>下载<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a><br>下载完成后点开始能看到<br><img src="/image/img2.png" alt="效果图"></p>
+<h1 id="注册GitHub账号然后创建代码仓"><a href="#注册GitHub账号然后创建代码仓" class="headerlink" title="注册GitHub账号然后创建代码仓"></a>注册<a href="https://github.com" target="_blank" rel="noopener">GitHub</a>账号然后创建代码仓</h1><h1 id="用hexo搭建博客"><a href="#用hexo搭建博客" class="headerlink" title="用hexo搭建博客"></a>用hexo搭建博客</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install  hexo-cli -g</span><br><span class="line">-----</span><br></pre></td></tr></table></figure></p>
+<h1 id="创建一个自定义文件夹，然后右单击鼠标点击git-bash-here执行以下操作"><a href="#创建一个自定义文件夹，然后右单击鼠标点击git-bash-here执行以下操作" class="headerlink" title="创建一个自定义文件夹，然后右单击鼠标点击git bash here执行以下操作"></a>创建一个自定义文件夹，然后右单击鼠标点击git bash here执行以下操作</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<h2 id="然后可在该文件夹下看到以下目录"><a href="#然后可在该文件夹下看到以下目录" class="headerlink" title="然后可在该文件夹下看到以下目录"></a>然后可在该文件夹下看到以下目录</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">文件名</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">source</td>
+<td style="text-align:center">博客资源文件夹</td>
+</tr>
+<tr>
+<td style="text-align:left">source/_draft</td>
+<td style="text-align:center">草稿文件</td>
+</tr>
+<tr>
+<td style="text-align:left">source/_posts</td>
+<td style="text-align:center">文章文件</td>
+</tr>
+<tr>
+<td style="text-align:left">themes</td>
+<td style="text-align:center">存放主题的文件夹(修改主题细节)</td>
+</tr>
+<tr>
+<td style="text-align:left">　_config.yml　</td>
+<td style="text-align:center">　全局配置文件夹　</td>
+</tr>
+<tr>
+<td style="text-align:left">　node_modules　</td>
+<td style="text-align:center">　使用hexo需要的其他node.js模块　</td>
+</tr>
+<tr>
+<td style="text-align:left">　public　</td>
+<td style="text-align:center">　用来上传到GitHub或主机空间　</td>
+</tr>
+<tr>
+<td style="text-align:left">scaffoldes</td>
+<td style="text-align:center">模板文件夹</td>
+</tr>
+<tr>
+<td style="text-align:left">package.json</td>
+<td style="text-align:center">配置hexo运行需要的node.js包</td>
+</tr>
+</tbody>
+</table>
+<h3 id="执行以下命令"><a href="#执行以下命令" class="headerlink" title="执行以下命令"></a>执行以下命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g #生成</span><br><span class="line">hexo s  #启动博客</span><br></pre></td></tr></table></figure>
+<hr>
+<p>在执行hexo s之后可输入网址hppt://4000查看效果</p>
+<h1 id="部署到GitHub上"><a href="#部署到GitHub上" class="headerlink" title="部署到GitHub上"></a>部署到GitHub上</h1><h2 id="安装deployer"><a href="#安装deployer" class="headerlink" title="安装deployer"></a>安装deployer</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="并修改-config-yml文件为"><a href="#并修改-config-yml文件为" class="headerlink" title="并修改_config.yml文件为"></a>并修改_config.yml文件为</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: git</span><br><span class="line"> repo: https://github.com/username/username.io.git</span><br><span class="line"> banch: master</span><br></pre></td></tr></table></figure>
+<p><em>部署</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d #部署</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h1 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h1><hr>
+<h2 id="在hexo主题官网上选择喜欢的主题然后下载"><a href="#在hexo主题官网上选择喜欢的主题然后下载" class="headerlink" title="在hexo主题官网上选择喜欢的主题然后下载"></a>在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo主题官网</a>上选择喜欢的主题然后下载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/MOxFIVE/hexo-theme-yelee.git</span><br></pre></td></tr></table></figure>
+<p>然后修改theme/_config.yml文件</p>
+<p><em>theme: yelee</em><br>执行以下命令查看效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #更换主题后使用</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<h3 id="因为有三个命令经常用，所以可以将它们做成脚本，在package-json文件下添加"><a href="#因为有三个命令经常用，所以可以将它们做成脚本，在package-json文件下添加" class="headerlink" title="因为有三个命令经常用，所以可以将它们做成脚本，在package.json文件下添加"></a>因为有三个命令经常用，所以可以将它们做成脚本，在package.json文件下添加</h3><p>之后只要执行</p>
+<p><img src="/image/img3.png" alt="脚本"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h1><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;我的blog&quot;</span><br></pre></td></tr></table></figure>
 
       
     </div>
